@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <di class="nav-container">
+        <a href="#" class="logo">
+          <h1>Weather Dashboard</h1>
+        </a>
+      </di>
+      <div class="main-container">
+        <div class="history-section">
+          <h3>History</h3>
+          <div class="history-container" id="history-container"></div>
+        </div>
+
+        <div class="weather-contaner">
+          <div class="banner-container">
+            <h2 id="date">date</h2>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Search by area name"
+            />
+            <button id="start-btn" class="btn" onclick="processSearch()">
+              Search
+            </button>
+            <h3 id="city-details">Search for a city</h3>
+          </div>
+
+          <div class="dashboard-container">
+            <div class="forecasts-container" id="forecasts-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="assets/weather.js"></script>
+  </body>
+</html>
