@@ -11,7 +11,7 @@ const processSearch = () => {
     alert("Please enter value to continue");
   } else {
     const searchText = search.value;
-    const searchURL = `http://api.openweathermap.org/geo/1.0/direct?q=${searchText}&limit=1&appid=f04e076c34717f2c7992e7835aa08168`;
+    const searchURL = `https://api.openweathermap.org/geo/1.0/direct?q=${searchText}&limit=1&appid=f04e076c34717f2c7992e7835aa08168`;
 
     fetch(searchURL)
       .then((response) => response.json())
@@ -28,7 +28,7 @@ const processSearch = () => {
 };
 
 const fetchForecasts = (city, lat, lon) => {
-  const searchURL = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=f04e076c34717f2c7992e7835aa08168`;
+  const searchURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=f04e076c34717f2c7992e7835aa08168`;
   fetch(searchURL)
     .then((response) => response.json())
     .then((data) => {
