@@ -10,7 +10,7 @@ This application is a  weather dashboard that allows the user to get a city's cu
 
 ## Github Pages
 
-Locate the deployed application on Github  https://ze7hu.github.io/Weather-dash/] 
+Locate the deployed application on Github here: https://ze7hu.github.io/Weather-dash/
 
 ## Technologies Used
 HTML
